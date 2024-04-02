@@ -4,6 +4,6 @@
 	</head>
 	<body>
 		<h2 style="background: blue;text-align: center;color: white;">AVD Group</h2>
-		<p>CI CD Pipeline7</p>
+		<p>CI CD Pipeline8</p>
 	</body>
 </html>
