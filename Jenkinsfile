@@ -6,11 +6,14 @@ pipeline {
     }
     stages {
         stage ('checkoutcode') {
-            git branch:'main', url:'https://github.com/aktarai2000/java-web-app.git'
+            steps {
+                git branch: 'main' , url: 'https://github.com/aktarai2000/java-web-app.git'
+            }
         }
         stage ('buildcode') {
-            sh '/opt/maven/bin/mvn clean package'
+            steps {
+                sh '/opt/maven/bin/mvn clean package'
+            }
         }
     }
-
 }
